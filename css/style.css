@@ -10,7 +10,7 @@
 }
 .search{
   color: #fff;
-  display: inline-blo;
+  display: inline-box;
 }
 
 body{
@@ -117,7 +117,12 @@ body{
   background: #92a6e2;
   display: none;
 }
-
+.wrapper .sidebar ul li a span.title .searchbox{
+  padding: 10px;
+}
+.wrapper .sidebar ul li a span.title button.searchbox:hover{
+  cursor: pointer;
+}
 .wrapper .sidebar ul li a span.icon{
   margin-right: 10px;
   display: inline-block;
