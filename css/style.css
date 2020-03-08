@@ -179,3 +179,6 @@ body{
   width: (100% - 70px);
   margin-left: 70px;
 }
+#logbtn {
+  color:blue;
+}
