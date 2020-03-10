@@ -105,6 +105,7 @@ body{
     margin-bottom: 1px;
     color: #92a6e2;
     white-space: nowrap;
+    border-bottom: 1px solid;
 }
 
 .wrapper .sidebar ul li a:before{
