@@ -144,6 +144,24 @@ body{
   display: block;
 }
 
+.wrapper .sidebar .sub-arrow:after{
+  content: '\203A';
+  float: right;
+  margin-right: 20px;
+  transform: rotate(90deg);
+}
+
+.wrapper .sidebar li:hover .sub-arrow:after{
+  content: '\2039';
+}
+.wrapper .sidebar .side-ul ul{
+  display: none;
+}
+
+.wrapper .sidebar .side-ul li:hover ul{
+  display:block;
+}
+
 .wrapper .main_container{
   width: (100% - 200px);
   margin-top: 70px;
