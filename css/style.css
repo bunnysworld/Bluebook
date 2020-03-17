@@ -151,15 +151,14 @@ body{
   transform: rotate(90deg);
 }
 
-.wrapper .sidebar li:hover .sub-arrow:after{
+.wrapper .sidebar li.tap:hover .sub-arrow:after{
   content: '\2039';
 }
-.wrapper .sidebar .side-ul ul{
+.wrapper .sidebar .side-ul li ul{
   display: none;
 }
-
-.wrapper .sidebar .side-ul li:hover ul{
-  display:block;
+.wrapper .sidebar li.tap ul{
+  display: block;
 }
 
 .wrapper .main_container{
