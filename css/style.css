@@ -37,15 +37,6 @@ body{
   border-top-left-radius: 20px;
   cursor: pointer;
 }
-
-.wrapper .top_navbar .hamburger div{
-  width: 35px;
-  height: 4px;
-  background: #2e4ead;
-  margin: 5px 0;
-  border-radius: 5px;
-}
-
 .wrapper .top_navbar .top_menu{
   width: calc(100% - 70px);
   height: 100%;
