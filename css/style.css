@@ -152,6 +152,7 @@ body{
 }
 .wrapper .sidebar li.tap ul{
   display: block;
+  background-color:rgba(250, 78, 78, 0.411);
 }
 
 .wrapper .main_container{
