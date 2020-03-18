@@ -41,7 +41,7 @@ body{
 .wrapper .top_navbar .hamburger div{
   width: 35px;
   height: 4px;
-  background: #92a6e2;
+  background: #2e4ead;
   margin: 5px 0;
   border-radius: 5px;
 }
@@ -91,10 +91,12 @@ body{
   top: 70px;
   left: 10px;
   background: #2e4ead;
-  width: 256px;
+  width: 270px;
   height: calc(100% - 80px);
   border-bottom-left-radius: 20px;
   transition: all 0.3s ease;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .wrapper .sidebar ul li a{
