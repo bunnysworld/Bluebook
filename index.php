@@ -21,7 +21,7 @@
             </div>
             <div class="top_menu">
                 <div class="logo">
-                    Bluebook
+                <i class="fa fa-book"> Bluebook </i>
                 </div>
                   
                 <a href="form.php" id="logbtn">

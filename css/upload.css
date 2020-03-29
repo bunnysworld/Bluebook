@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}  
+.upform{
+    padding: 100px 100px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1ecf2;
+    font-size: 25px;
+    color: #2e4ead;
+    font-family: sans-serif;
+    
+}
+.form-group {
+    padding: 10px;
+}
+.form-group li{
+
+    list-style: none;
+}
+.form-group select{
+
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+}
+ 
