@@ -5,7 +5,7 @@
         if(isset($_POST['upload'])){
             $filename=$_FILES['uploadfile']['name'];
             $tempname=$_FILES['uploadfile']['tmp_name'];
-            $folder="exam_papers/".$filename;
+            $folder="exam_papers/".$filename;               //make folder name "exam_papers" on your local comp. inside BLUEBOOK folder
             move_uploaded_file($tempname,$folder);
             $branch=$_POST['branch'];
             $subject=$_POST['subject'];
