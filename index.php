@@ -40,10 +40,19 @@
                             <button class="searchbox" type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </span>
-                </a></li>
+                    </a>
+                </li>
+                <?php
+                    require_once('connection.php');
+                    $sql="SELECT subjects FROM Sub";
+                    $result=mysqli_query($conn,$sql);
+                    if($result){
+                        while($row=mysqli_fetch_assoc($result)){
+
+                ?>
                 <li class="sub-nav"><a href="#">
                         <span class="icon"><i class="fab fa-java"></i></span>
-                        <span class="title">java</span>
+                        <span class="title"><?php echo($row['subjects'])?></span>
                         <span class="sub-arrow"></span>
                     </a>
                     <ul>
@@ -68,80 +77,11 @@
                         </a>
                     </ul>
                 </li>
-                <li class="sub-nav"><a href="#">
-                        <span class="icon"><i class="fab fa-grav"></i></span>
-                        <span class="title">Physics</span>
-                    </a>
-                    <ul>
-                        <a href="#">
-                            <span class="icon"><i class="fas fa-sticky-note"></i></span>
-                            <span class="title">java-1</span>
-                        </a>
-
-                        <a href="#">
-                            <span class="icon"><i class="fas fa-sticky-note"></i></span>
-                            <span class="title">java-1</span>
-                        </a>
-
-                        <a href="#">
-                            <span class="icon"><i class="fas fa-sticky-note"></i></span>
-                            <span class="title">java-1</span>
-                        </a>
-
-                        <a href="#">
-                            <span class="icon"><i class="fas fa-sticky-note"></i></span>
-                            <span class="title">java-1</span>
-                        </a>
-                    </ul>
-                </li>
-                <li><a href="#">
-                        <span class="icon"><i class="fas fa-atom"></i></i></span>
-                        <span class="title">Chemistry</span>
-                    </a></li>
-                <li><a href="#">
-                        <span class="icon"><i class="fas fa-digital-tachograph"></i></span>
-                        <span class="title">Digital Electronics</span>
-                    </a></li>
-                <li><a href="#">
-                        <span class="icon"><i class="fab fa-apple"></i></span>
-                        <span class="title">Operating System</span>
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="icon"><i class="fas fa-square-root-alt"></i></span>
-                        <span class="title">Maths</span>
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="icon"><i class="fas fa-square-root-alt"></i></span>
-                        <span class="title">Maths</span>
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="icon"><i class="fas fa-square-root-alt"></i></span>
-                        <span class="title">Maths</span>
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="icon"><i class="fas fa-square-root-alt"></i></span>
-                        <span class="title">Maths</span>
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="icon"><i class="fas fa-square-root-alt"></i></span>
-                        <span class="title">Maths</span>
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="icon"><i class="fas fa-square-root-alt"></i></span>
-                        <span class="title">Maths</span>
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="icon"><i class="fas fa-square-root-alt"></i></span>
-                        <span class="title">Maths</span>
-                    </a>
-                </li>
+                <?php 
+                        }
+                    }
+                ?>
+                
             </ul>
         </div>
     </div>
